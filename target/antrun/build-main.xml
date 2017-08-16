@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <taskdef resource="net/sf/antcontrib/antcontrib.properties" classpathref="maven.plugin.classpath"/>
+  <echo message="Replace the properties"/>
+  <replaceregexp file="D:\DEV\workspace_mars\sample/target/classes/system.properties" match="(^)global.host=(.*)" replace="global.host=http://test.com" byline="true"/>
+</target>
+</project>
